@@ -1,0 +1,641 @@
+
+
+.x-form-item-label  {
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.x-label  {
+	font-weight: bold;
+}
+
+.red .x-form-field{
+    background-image:none;
+    background-color:#ff01016b;    
+}
+.x-grid-cell-inner {
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px;
+	
+}
+.x-column-header-inner 
+{
+	background-color: #eef2f3;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	border: none;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+.background
+{
+	top: 0px;
+	left: 0px;	
+	background: #EEF2F3 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.header
+{
+	height: 150px;
+	border-width: 1px ;
+	border-color: #DEDEDE;
+	background-color: white;	 
+	border-style: solid;	
+}
+.header:after 
+{
+	content: '';
+    	display: block;
+    	height: 70px;  /*height of icon */
+    	width: 320px;  /*width of icon */
+    	position: absolute;
+    	/*where to replace the icon */
+    	bottom: 40px;
+    	left: 50px;
+    	/*background */
+    	background: white url(./images/logo.png) no-repeat 0px 0px;
+    	object-fit: cover;		
+}
+.header:before
+{
+	content: '';
+    	display: block;
+    	height: 70px;  /*height of icon */
+    	width: 200px;  /*width of icon */
+    	position: absolute;
+    	/*where to replace the icon */
+    	bottom: 40px;
+    	right: 100px;
+    	/*background */
+    	background: white url(./images/diit.png) no-repeat 0px 0px;
+    	object-fit: cover;		
+}
+.notification_box
+{
+	top: 150px;
+	left: 0.3125px;
+	width: 1440px;
+	height: 57px;
+	border: 1px solid #CBCCCD;
+	opacity: 1;
+}
+.notification
+{	
+	background: #003366 0% 0% no-repeat padding-box;
+	
+}
+.title
+{
+	top: 150px;
+	left: 0px;
+	width: 1440px;
+	height: 350px;
+	background: transparent linear-gradient(19deg, #C4FE88 0%, #2BFAF4 100%) 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.display_field_big
+{
+	font-size: 50px;
+	color: #003366; 
+	font-weight: bold;
+	cursor: pointer;
+}
+.display_field_medium
+{
+	font-size: 40px;
+	color: #003366; 
+	font-weight: bold;
+}
+.school_info
+{
+	background-color: Azure;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #1583C3;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.bandwidth_blue
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #1583C3;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;	
+}
+
+.bandwidth_blue:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/blue_icon.png) no-repeat 0px 0px;
+    object-fit: cover;
+}
+
+.bandwidth_green
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #00ff00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;	
+}
+
+.bandwidth_green:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background: url(./images/green_icon.png) no-repeat 0px 0px;
+    object-fit: cover;
+}
+
+.bandwidth_yellow
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ffff00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.bandwidth_yellow:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background: url(./images/yellow_icon.png) no-repeat 0px 0px;     
+    object-fit: cover;
+}
+.bandwidth_orange
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ffcc00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.bandwidth_orange:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background: url(./images/orange_icon.png) no-repeat 0px 0px;     
+    object-fit: cover;
+}
+
+.bandwidth_red
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ff0000;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.bandwidth_red:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/red_icon.png) no-repeat 0px 0px;  
+    object-fit: cover;
+}
+.network_blue
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #1583C3;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;	
+}
+
+.network_blue:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/blue_icon.png) no-repeat 0px 0px;
+    object-fit: cover;
+}
+
+.network_green
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #00ff00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;	
+}
+
+.network_green:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/green_icon.png) no-repeat 0px 0px;
+    object-fit: cover;
+}
+
+.network_yellow
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ffff000;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.network_yellow:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/yellow_icon.png) no-repeat 0px 0px;     
+    object-fit: cover;
+}
+.network_orange
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ffcc00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.network_orange:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/orange_icon.png) no-repeat 0px 0px;     
+    object-fit: cover;
+}
+
+.network_red
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ff0000;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.network_red:after{
+    content: '';
+    display: block;
+    height: 70px;  /*height of icon */
+    width: 70px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 50px;
+    right: 40px;
+      /*background */
+    background:  url(./images/red_icon.png) no-repeat 0px 0px;  
+    object-fit: cover;
+}
+
+.ap_blue
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #1583C3;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+.ap_blue:after
+{
+	content: '';
+	position: absolute;
+	width: 95%;
+	height: 1px;
+	background: blue;
+	top: 120px;
+	left: 5px;	
+}
+
+.ap_green
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #00ff00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+.ap_green:after
+{
+	content: '';
+	position: absolute;
+	width: 95%;
+	height: 1px;
+	background: blue;
+	top: 120px;
+	left: 5px;	
+}
+
+.ap_yellow
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ffff00;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+.ap_yellow:after
+{
+	content: '';
+	position: absolute;
+	width: 95%;
+	height: 1px;
+	background: blue;
+	top: 120px;
+	left: 5px;	
+}
+
+.ap_red
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #ff0000;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+.ap_red:after
+{
+	content: '';
+	position: absolute;
+	width: 95%;
+	height: 1px;
+	background: blue;
+	top: 120px;
+	left: 5px;	
+}
+
+
+.summary_title{
+	position:absolute;
+}
+.refresh{
+	position: absolute;
+	top: 0;
+	right:0;
+	cursor: pointer;
+	height: 60px;
+	width: 200px;
+}
+.refresh:after{
+	 content: '';
+	 display: block;
+	 height: 60px;  /*height of icon */
+	 width: 60px;  /*width of icon */
+	 position: absolute;
+	 /*where to replace the icon */
+	 top: 50%;
+	 margin-top:-30px;
+	 left: 0px;
+	 	 /*background */      
+	 background:  url(./images/refresh.png) no-repeat 10px 10px;
+	 object-fit: cover;
+	 animation-name: spin;
+	 animation-duration: 1s;
+	 animation-iteration-count: 1;
+	 animation-direction: reverse;
+
+}
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}
+@-webkit-keyframes	 spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}
+
+#refresh_date{
+	position: absolute;
+	top: 5px;
+	left: 55px;
+}
+.summary_box
+{
+	background-color: white;
+	border-style: solid;
+	border-top-width: 10px;
+	border-top-color: #1583C3;
+	
+	border-bottom-width: 0px; 
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.summary_box:after
+{
+	content: '';
+	position: absolute;
+	width: 95%;
+	height: 1px;
+	background: blue;
+	top: 120px;
+	left: 5px;	
+}
+
+.performance
+{
+	width: 1440px;
+	height: 300px;	
+}
+.tooltip{
+	background-color: lightgray;
+	color: #ffffff;
+}
+
+.network_box{
+	position: absolute;
+}
+.network_box_title_green{
+	position: relative;
+	left: 5px;
+	top: 5px;
+	height: 60px;
+	width: 95%;
+	font-size:20px;
+	font-weight: bold; 
+}
+.network_box_title_green:after{
+	content: '';
+	display: block;    
+	height: 50px;  /*height of icon */    
+	width: 50px;  /*width of icon */
+	position: absolute;
+    	/*where to replace the icon */
+    	top: 5px;
+    	left: 5px;
+    	/*background */
+    	background:  url(./images/green.png) no-repeat 0px 0px;
+    	object-fit: cover; 
+}
+.network_box_title_red{
+	position: relative;
+	left: 5px;
+	top: 5px;
+	height: 60px;
+	width: 95%;
+	font-size:20px;
+	font-weight: bold; 
+}
+.network_box_title_red:after{
+	content: '';
+	display: block;    
+	height: 50px;  /*height of icon */    
+	width: 50px;  /*width of icon */
+	position: absolute;
+    	/*where to replace the icon */
+    	top: 5px;
+    	left: 5px;
+    	/*background */
+    	background:  url(./images/red.png) no-repeat 0px 0px;
+    	object-fit: cover; 
+}
+.network_box_title_yellow{
+	position: relative;
+	left: 5px;
+	top: 5px;
+	height: 60px;
+	width: 95%;
+	font-size:20px;
+	font-weight: bold; 
+}
+.network_box_title_yellow:after{
+	content: '';
+	display: block;    
+	height: 50px;  /*height of icon */    
+	width: 50px;  /*width of icon */
+	position: absolute;
+    	/*where to replace the icon */
+    	top: 5px;
+    	left: 5px;
+    	/*background */
+    	background:  url(./images/yellow.png) no-repeat 0px 0px;
+    	object-fit: cover; 
+}
+.network_box_title_blue{
+	position: relative;
+	left: 5px;
+	top: 5px;
+	height: 60px;
+	width: 95%;
+	font-size:20px;
+	font-weight: bold; 
+}
+.network_box_title_blue:after{
+	content: '';
+	display: block;    
+	height: 50px;  /*height of icon */    
+	width: 50px;  /*width of icon */
+	position: absolute;
+    	/*where to replace the icon */
+    	top: 5px;
+    	left: 5px;
+    	/*background */
+    	background:  url(./images/blue.png) no-repeat 0px 0px;
+    	object-fit: cover; 
+}
+
