@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EEF2F3;
+}
+
+#navbarLogo {
+    display: flex;
+    justify-content: space-between;
+    /* Positions logos at opposite ends */
+    align-items: center;
+    margin: 30px 100px -30px;
+    padding: 10px 100px;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#navbarSM{
+   text-align: center;
+   margin: 30px 100px -40px;
+    padding: 1px;
+   background-color: #003367;
+   color:#fff;
+}
+
+#navbarSM span{
+font-weight: 100;
+}
+
+#navbarMain{
+    margin: 30px 100px;
+    background: linear-gradient(to right, #7FFFD4, #00FF7F);
+}
+#navbarMain p{
+    font-size: 40px;
+    padding: 20px 0px 200px 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+.dashboard {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 150px -30px;
+    padding: 20px;
+}
+
+#dashboardh1 {
+    color: #003366;
+    margin-right:30px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 48%;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: #003366;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.alert {
+    color: #cc0000;
+    font-size: 24px;
+    float: right;
+}

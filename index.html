@@ -1,67 +1,63 @@
+<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/NYC_DOE_Logo.png" alt="NYC Public Schools Logo">
+<img src="https://media.licdn.com/dms/image/v2/D4E0BAQGTTt9ikW-zFw/company-logo_200_200/company-logo_200_200/0/1698848446035/the_division_of_instructional_and_information_technology_logo?e=2147483647&v=beta&t=kA1TIMl97kTFZ5oVtd1007s6rLZp83_MA4A1_jBoyf8"
+    alt="DIIT Logo"> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Vertical Sections</title>
-    <style>
-        body {
-            margin: 10px;
-            padding: 0;
-            background-color: lightgrey;
-        }
-
-        .container {
-            height: 400px;
-        }
-
-        .section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .section-one {
-            height: 150px;
-            background-color: white;
-            text-align: center;
-        }
-
-        .section-two {
-            height: 50px;
-            background-color: navy;
-            color: white;
-            text-align: center;
-        }
-
-        .section-three {
-            height: 200px;
-            background-color: lemonchiffon;
-            text-align: center;
-        }
-    </style>
+    <title>Navigation Bar with Logos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <!-- Section 1: White background with company logo -->
-        <div class="section section-one">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/NYC_DOE_Logo.png" alt="Company Logo" width="10%" />
-        </div>
-
-        <!-- Section 2: Navy background with system notification -->
-        <div class="section section-two">
-            <p>System Notification: Please check your system status.</p>
-        </div>
-
-        <!-- Section 3: Lemon lime background with SPOC Network Operations Center -->
-        <div class="section section-three">
+    <nav>
+    <div id="navbarLogo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/NYC_DOE_Logo.png" alt="NYC Public Schools Logo" id="logo">
+        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGTTt9ikW-zFw/company-logo_200_200/company-logo_200_200/0/1698848446035/the_division_of_instructional_and_information_technology_logo?e=2147483647&v=beta&t=kA1TIMl97kTFZ5oVtd1007s6rLZp83_MA4A1_jBoyf8"
+    alt="DIIT Logo" id="logo">
+    </div>
+    <div id="navbarSM"> 
+        <h4>System Notification: <span>Welcome to the new School Infrastructure Dashboard!</span></h4>
+    </div>
+        <div id="navbarMain">
             <p>SPOC Network Operations Center</p>
         </div>
+</nav>
+<h1 id="dashboardH1">At a Glance</h1>
+<div class="dashboard">
+    <div class="row">
+        <div class="card">
+            <h2>Bandwidth <span class="alert">&#9888;</span></h2>
+        </div>
+        <div class="card">
+            <h2>Network Health <span class="alert">&#9888;</span></h2>
+        </div>
     </div>
-
+    <div class="row">
+        <div class="card">
+            <h2>Tickets</h2>
+            <p># of open tickets</p>
+        </div>
+        <div class="card">
+            <h2>Wireless</h2>
+            <p># of devices using Wi-Fi</p>
+        </div>
+        <div class="card">
+            <h2>Access Points</h2>
+            <p># of access points</p>
+        </div>
+        <div class="card">
+            <h2>POS</h2>
+            <p># of point-of-sale machines in use</p>
+        </div>
+    </div>
+</div>
+    
 </body>
 
 </html>
+
+
