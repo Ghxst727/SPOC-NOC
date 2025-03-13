@@ -44,21 +44,16 @@ font-weight: 100;
 
 
 
-
+.dashTitle {
+    color: #003366;
+    margin-left: 150px;
+    font-size: 20px;
+}
 
 .dashboard {
     margin: 0 auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 30px 150px -30px;
+    margin: -30px 130px -30px;
     padding: 20px;
-}
-
-#dashboardh1 {
-    color: #003366;
-    margin-right:30px;
-    margin-bottom: 20px;
 }
 
 .row {
@@ -67,27 +62,120 @@ font-weight: 100;
     margin-bottom: 20px;
 }
 
-.card {
-    width: 48%;
+.cardr1 {
+    width: 49.5%;
     background-color: #f9f9f9;
     border-radius: 4px;
     padding: 15px;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 10px solid #1783C3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cardr2 {
+    width: 48%;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin:5px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 10px solid #1783C3;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.card h2 {
+.cardr1 h1 {
+    color: #003366;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.cardr2 h2 {
     color: #003366;
     margin-top: 0;
     font-size: 18px;
 }
 
-.card p {
+.cardr2 p {
+    margin-top: 50px;
+    font-size: 15px;
     margin-bottom: 0;
     color: #666;
 }
 
+.cardr2 hr {
+    height: 1px;
+    background-color: #0600FF;
+    border: none;
+    margin: 15px 0 30px;
+}
+
 .alert {
-    color: #cc0000;
-    font-size: 24px;
+    color: #003366;
+    font-size: 100px;
     float: right;
+}
+
+
+.cardr1:hover,
+.cardr2:hover {
+    background-color: #1783C3;
+    color: #fff;
+    border-top: 10px solid #fff;
+    .alert{
+        color:#fff;
+    }
+}
+.cardr1:hover h1,
+.cardr2:hover h2 {
+    color: #fff;
+}
+.cardr2:hover p{
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    /* Nav */
+    #navbarLogo {
+        margin: 30px 10px -30px;
+        padding: 10px 50px;
+    }
+    #navbarSM {
+        margin: 30px 10px -40px;
+    }
+
+    #navbarMain {
+        margin: 30px 10px;
+    }
+    #navbarMain p{
+        font-size: 20px;
+        padding: 20px 0px 100px 20px;
+    }
+    /* Cards */
+    .dashTitle {
+        color: #003366;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .dashboard {
+        margin: 0 auto;
+        margin: -30px 20px -30px;
+        padding: 20px;
+    }
+    .cardr1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cardr2 {
+        width: 49.5%;
+        margin: 5px 0;
+    }
+    .row {
+        flex-wrap:wrap;
+    }
+    .dashboard {
+        padding: 10px;
+    }
 }
