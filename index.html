@@ -28,12 +28,12 @@
 </nav>
 
 <div class="dashTitle">
-    <h1>At a Glance</h1>
+    <h1>At a Glance <img id="glance_legend" src="./SPOC NOC_files/information.png" /></h1>
     </div>
 <div class="dashboard">
     <div class="row">
         <div class="cardr1">
-            <h1>Bandwidth:<img id="bandwidth_question" src="./SPOC NOC_files/information.png" /> <span class="alert">&#9888;</span></h1>
+            <h1>Bandwidth:<img id="bandwidth_legend" src="./SPOC NOC_files/information.png" /> <span class="alert">&#9888;</span></h1>
         </div>
         <div class="cardr1">
             <h1>Network Health:<img id="bandwidth_question" src="./SPOC NOC_files/information.png" /> <span class="alert">&#9888;</span></h1>
@@ -42,7 +42,9 @@
     </div>
     <div class="row">
         <div class="cardr2">
-            <h2>Tickets:<img id="bandwidth_question" src="./SPOC NOC_files/information.png" /></h2>
+            <h2>Tickets:
+                <img id="bandwidth_question" src="./SPOC NOC_files/information.png" />
+            </h2>
             <p># of open tickets</p>
             <hr>
         </div>
@@ -63,7 +65,56 @@
         </div>
     </div>
 </div>
-    
+
+
+
+<!-- POPUPS -->
+<!-- BANDWIDTH -->
+<div id="glance-popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <p style="color: black;">The difference in colors represents the performance of the section. <br><br> For example:</p>
+        <p style="background-color:red; color: black;"><strong>Red: </strong>Your school is using 90% or more of its
+            bandwidth. As a result, your internet speed may be slow or inconsistent. Scroll down to Most Used
+            Applications and Most Used IP Addresses to see what apps and sites are currently using the most bandwidth.
+        </p>
+        <p style="background-color:orange; color: black;"><strong>Orange: </strong>Your school is using 80-90% of its
+            bandwidth. This could mean slowness or interruptions.</p>
+        <p style="background-color:yellow; color: black;"><strong>Yellow: </strong>Your school is using 70-80% of its
+            bandwidth.</p>
+        <p style="background-color:lime; color: black;"><strong>Green: </strong>Your school is using 69% or less of its
+            bandwidth.</p>
+        <p style="color: black">If these colors are difficult to differentiate, clicking on the legends of the section will present it's status.</p>
+    </div>
+</div>
+
+
+
+
+<!-- <div id="glance-popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h1 style="color: black;">Bandwidth Status: <span id="bandwidth-status">Green</span></h1>
+        <p style="color: black;">Bandwidth is the amount of data that can be transferred from one point to another
+            within a network in a specific amount of time.</p>
+        <p style="background-color:red; color: black;"><strong>Red: </strong>Your school is using 90% or more of its
+            bandwidth. As a result, your internet speed may be slow or inconsistent. Scroll down to Most Used
+            Applications and Most Used IP Addresses to see what apps and sites are currently using the most bandwidth.
+        </p>
+        <p style="background-color:orange; color: black;"><strong>Orange: </strong>Your school is using 80-90% of its
+            bandwidth. This could mean slowness or interruptions.</p>
+        <p style="background-color:yellow; color: black;"><strong>Yellow: </strong>Your school is using 70-80% of its
+            bandwidth.</p>
+        <p style="background-color:lime; color: black;"><strong>Green: </strong>Your school is using 69% or less of its
+            bandwidth.</p>
+        <p><a href="#" style="color: blue; text-decoration: underline;">Need more bandwidth? Go to Request More
+                Bandwidth below.</a></p>
+    </div>
+</div> -->
+
+
+
+<script src="script.js"></script>
 
 </body>
 
