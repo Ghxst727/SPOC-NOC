@@ -83,6 +83,9 @@ font-weight: 100;
     border-top: 10px solid #1783C3;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+.icon{
+    color:skyblue;
+}
 #bandwidth{
     border-top: 10px solid lime;
 }
