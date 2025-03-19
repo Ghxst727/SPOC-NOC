@@ -1,19 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var icon = document.getElementById("glance_legend");
-  var popup = document.getElementById("glance-popup");
-  var span = document.getElementsByClassName("close")[0];
-
-  icon.onclick = function() {
-    popup.style.display = "block";
-  }
-
-  span.onclick = function() {
-    popup.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == popup) {
-      popup.style.display = "none";
+document.addEventListener('DOMContentLoaded', function () {
+  // Open popup when an icon is clicked
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('icon')) {
+      const popupId = event.target.getAttribute('data-popup');
+      const popup = document.getElementById(popupId);
+      if (popup) {
+        popup.style.display = 'block';
+      }
     }
-  }
+  });
+
+  // Close popup when the close button is clicked
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('close')) {
+      const popup = event.target.closest('.popup');
+      if (popup) {
+        popup.style.display = 'none';
+      }
+    }
+  });
+
+  // Close popup when clicking outside of it
+  window.addEventListener('click', function (event) {
+    if (event.target.classList.contains('popup')) {
+      event.target.style.display = 'none';
+    }
+  });
 });
+

@@ -83,7 +83,15 @@ font-weight: 100;
     border-top: 10px solid #1783C3;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+#bandwidth{
+    border-top: 10px solid lime;
+}
+#network {
+    border-top: 10px solid yellow;
+}
+#access {
+    border-top: 10px solid red;
+}
 .cardr1 h1 {
     color: #003366;
     margin-top: 0;
@@ -136,8 +144,6 @@ font-weight: 100;
 
 
 
-
-
 .popup {
     display: none;
     position: fixed;
@@ -178,20 +184,6 @@ font-weight: 100;
     padding:10px;
     /* Adjust spacing between paragraphs */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 900px) {
